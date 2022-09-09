@@ -721,6 +721,10 @@ body {
   justify-content: space-between;
 }
 
+.ud-justify-around {
+  justify-content: space-around;
+}
+
 .ud-space-y-5 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
@@ -749,6 +753,15 @@ body {
   border-width: 1px;
 }
 
+.ud-border-y {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+
+.ud-border-t {
+  border-top-width: 1px;
+}
+
 .ud-bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -764,6 +777,11 @@ body {
   background-color: rgb(24 28 49 / var(--tw-bg-opacity));
 }
 
+.ud-bg-\[\#FBFBFB\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 251 251 / var(--tw-bg-opacity));
+}
+
 .ud-p-5 {
   padding: 1.25rem;
 }
@@ -776,6 +794,16 @@ body {
 .ud-px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.ud-py-\[45\] {
+  padding-top: 45;
+  padding-bottom: 45;
+}
+
+.ud-py-\[45px\] {
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
 
 .ud-pt-16 {
