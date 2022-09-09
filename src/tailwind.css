@@ -1,0 +1,37 @@
+@tailwind base;
+
+@layer base {
+  body {
+    @apply ud-font-body;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply ud-scroll-smooth;
+}
+
+.header {
+  @apply ud-py-5;
+}
+
+.sticky {
+  @apply ud-fixed ud-z-[9999] ud-bg-white ud-bg-opacity-80 ud-py-2 ud-transition dark:ud-bg-dark;
+  backdrop-filter: blur(5px);
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+
+.menu-scroll.active {
+  @apply ud-text-primary;
+}
+
+.nav-tab {
+  @apply ud-inline-flex ud-items-center ud-justify-center ud-text-center ud-font-heading ud-text-base ud-text-dark hover:ud-text-primary dark:hover:ud-text-white;
+}
+
+.btn-lg {
+  @apply ud-w-full ud-whitespace-nowrap ud-rounded-[30px] ud-py-[10px] ud-px-[30px] ud-text-center after:ud-font-heading ud-text-white lg:ud-w-auto;
+}
