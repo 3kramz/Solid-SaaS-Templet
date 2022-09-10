@@ -689,6 +689,10 @@ body {
   height: 508px;
 }
 
+.ud-h-\[300px\] {
+  height: 300px;
+}
+
 .ud-w-full {
   width: 100%;
 }
@@ -847,6 +851,14 @@ body {
 
 .ud-p-\[50px\] {
   padding: 50px;
+}
+
+.ud-p-\[7\] {
+  padding: 7;
+}
+
+.ud-p-\[70px\] {
+  padding: 70px;
 }
 
 .ud-px-5 {
