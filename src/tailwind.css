@@ -28,3 +28,7 @@ html {
 .btn-lg {
   @apply ud-w-full ud-whitespace-nowrap ud-rounded-[30px] ud-py-[10px] ud-px-[30px] ud-text-center after:ud-font-heading ud-text-white lg:ud-w-auto;
 }
+
+.btn-feature{
+  @apply ud-rounded-[30px] ud-py-[5px] ud-px-[18px] ;
+}
