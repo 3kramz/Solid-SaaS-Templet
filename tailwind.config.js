@@ -35,9 +35,8 @@ module.exports = {
         "text-color": "#757693",
         dark: "#181C31",
       },
-
-      dropShadow: {
-        light: "drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.1))",
+      backgroundImage: {
+        'dotted': "url('../images/Dotted-Shape.png')",
       },
     },
   },

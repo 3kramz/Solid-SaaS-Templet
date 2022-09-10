@@ -1,310 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Solid SaaS Templet</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    />
 
-    <!-- ===== CSS Files ===== -->
-    <link rel="stylesheet" href="./css/tailwind.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solid SaaS Templet</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 
-  <body>
-    <!-- ===== Header Start ===== -->
-    <header class="header ud-top-0 ud-left-0 ud-w-full">
+  <!-- ===== CSS Files ===== -->
+  <link rel="stylesheet" href="./css/tailwind.css" />
+</head>
+
+<body>
+  <!-- ===== Header Start ===== -->
+  <header class="header ud-top-0 ud-left-0 ud-w-full">
+    <div
+      class="ud-flex ud-w-full ud-flex-wrap ud-px-5 lg:ud-flex-nowrap lg:ud-items-center lg:ud-px-5 xl:ud-px-10 2xl:ud-px-20">
+      <div class="ud-relative ud-z-[99] ud-max-w-[250px] lg:ud-w-full xl:ud-max-w-[350px]">
+        <a href="index.html" class="ud-inline-block">
+          <img src="./images/Logo.png" alt="logo" class="ud-h-[30px]" />
+        </a>
+      </div>
       <div
-        class="ud-flex ud-w-full ud-flex-wrap ud-px-5 lg:ud-flex-nowrap lg:ud-items-center lg:ud-px-5 xl:ud-px-10 2xl:ud-px-20"
-      >
-        <div
-          class="ud-relative ud-z-[99] ud-max-w-[250px] lg:ud-w-full xl:ud-max-w-[350px]"
-        >
-          <a href="index.html" class="ud-inline-block">
-            <img src="./images/Logo.png" alt="logo" class="ud-h-[30px]" />
-          </a>
+        class="menu-wrapper ud-fixed ud-top-0 ud-left-0 ud-z-50 ud-h-screen ud-w-full ud-justify-center ud-bg-white ud-p-5 dark:ud-bg-dark lg:ud-visible lg:ud-static lg:ud-flex lg:ud-h-auto lg:ud-justify-start lg:ud-bg-transparent lg:ud-p-0 lg:ud-opacity-100 dark:lg:ud-bg-transparent">
+        <div class="ud-w-full ud-self-center">
+          <nav>
+            <ul
+              class="navbar ud-flex ud-flex-col ud-items-center ud-justify-center ud-space-y-5 ud-text-center lg:ud-flex-row lg:ud-justify-start lg:ud-space-x-10 lg:ud-space-y-0">
+              <li>
+                <a href="#home" class="menu-scroll nav-tab"> Home </a>
+              </li>
+              <li>
+                <a href="#features" class="menu-scroll nav-tab"> Features </a>
+              </li>
+              <li>
+                <a href="#pages" class="menu-scroll nav-tab"> Pages </a>
+              </li>
+
+              <li>
+                <a href="#support" class="menu-scroll nav-tab"> Support </a>
+              </li>
+            </ul>
+          </nav>
         </div>
         <div
-          class="menu-wrapper ud-fixed ud-top-0 ud-left-0 ud-z-50 ud-h-screen ud-w-full ud-justify-center ud-bg-white ud-p-5 dark:ud-bg-dark lg:ud-visible lg:ud-static lg:ud-flex lg:ud-h-auto lg:ud-justify-start lg:ud-bg-transparent lg:ud-p-0 lg:ud-opacity-100 dark:lg:ud-bg-transparent"
-        >
-          <div class="ud-w-full ud-self-center">
-            <nav>
-              <ul
-                class="navbar ud-flex ud-flex-col ud-items-center ud-justify-center ud-space-y-5 ud-text-center lg:ud-flex-row lg:ud-justify-start lg:ud-space-x-10 lg:ud-space-y-0"
-              >
-                <li>
-                  <a href="#home" class="menu-scroll nav-tab"> Home </a>
-                </li>
-                <li>
-                  <a href="#features" class="menu-scroll nav-tab"> Features </a>
-                </li>
-                <li>
-                  <a href="#pages" class="menu-scroll nav-tab"> Pages </a>
-                </li>
-
-                <li>
-                  <a href="#support" class="menu-scroll nav-tab"> Support </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div
-            class="ud-absolute ud-bottom-0 ud-left-0 ud-flex ud-w-full ud-items-center ud-justify-between ud-space-x-5 ud-self-end ud-p-5 lg:ud-static lg:ud-w-auto lg:ud-self-center lg:ud-p-0"
-          >
-            <a href="#" class="nav-tab"> SignIn </a>
-            <a href="#" class="btn-lg ud-bg-primary hover:ud-bg-opacity-90">
-              Download
-            </a>
-          </div>
+          class="ud-absolute ud-bottom-0 ud-left-0 ud-flex ud-w-full ud-items-center ud-justify-between ud-space-x-5 ud-self-end ud-p-5 lg:ud-static lg:ud-w-auto lg:ud-self-center lg:ud-p-0">
+          <a href="#" class="nav-tab"> SignIn </a>
+          <a href="#" class="btn-lg ud-bg-primary hover:ud-bg-opacity-90">
+            Download
+          </a>
         </div>
       </div>
-    </header>
-    <!-- ===== Header end ===== -->
+    </div>
+  </header>
+  <!-- ===== Header end ===== -->
 
-    <main class="">
-      <!-- ===== Hero Section Start ===== -->
-      <section
-        id="home"
-        class="ud-w-11/12 ud-mx-auto lg:ud-flex ud-flex-row-reverse ud-justify-between"
-      >
-        <div class="ud-w-1/2">
-          <img class="" src="images/Hero_img.png" alt="" srcset="" />
-        </div>
-        <div class="ud-w-1/2 ud-pt-16">
-          <p class="ud-text-dark ud-font-medium ud-text-lg">
-            🔥 Solid is one of the best option for you.
-          </p>
-          <h2
-            class="ud-my-3 ud-text-dark ud-font-bold ud-text-[44px] ud-leading-[50px]"
-          >
-            Complete Tailwind CSS Template for SaaS Website
-          </h2>
-          <p class="ud-text-text-color ud-text-base ud-pb-5">
-            Solid is a complete Tailwind CSS template crafted specially for
-            SaaS, Software Mobile App and Web App Sites.
-          </p>
-          <div class="ud-my-5">
-            <input
-              type="email"
-              class="ud-w-[314px] ud-h-[46px] ud-rounded-[30px] ud-border ud-mr-5 ud-px-6 ud-text-xl ud-text-dark"
-              placeholder="Enter your email address"
-            />
-            <button
-              type="submit"
-              class="btn-lg ud-bg-dark hover:ud-bg-opacity-90"
-            >
-              Get Started
-            </button>
-          </div>
-          <p class="ud-text-sm ud-text-dark">
-            Try for free no credit card required.
-          </p>
-        </div>
-      </section>
-      <!-- ===== Hero Section end ===== -->
-
-      <!-- ===== Client brand logo start ===== -->
-      <section class="ud-bg-[#FBFBFB] ud-border ud-border-t">
-        <div
-          class="ud-w-11/12 ud-mx-auto ud-flex ud-justify-around ud-py-[45px]"
-        >
-          <img src="images/brand-logo/logitech-2-1-1.png" alt="" srcset="" />
-          <img src="images/brand-logo/dropcam-1-1.png" alt="" srcset="" />
-          <img src="images/brand-logo/amd-logo-1.png" alt="" srcset="" />
-          <img src="images/brand-logo/nike-4.png" alt="" srcset="" />
-          <img src="images/brand-logo/Frame 4.png" alt="" srcset="" />
-          <img src="images/brand-logo/amazon-2.png" alt="" srcset="" />
-        </div>
-      </section>
-      <!-- ===== Client brand logo end ===== -->
-
-      <!-- ===== Features section start ===== -->
-      <section class="ud-py-[120px] ud-w-11/12 ud-mx-auto">
-        <h6 class="ud-text-center">
-          <span class="btn-feature ud-bg-[#EDF5FF] ud-border"
-            >SaaS Features</span
-          >
-        </h6>
-        <h2
-          class="ud-text-center ud-my-3 ud-text-dark ud-font-bold ud-text-[44px] ud-leading-[50px]"
-        >
-          Our Software's Core Features
-        </h2>
-
-        <p class="ud-text-center ud-text-text-color">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
-          tortor eros.<br />
-          Donec vitae tortor lacus. Phasellus aliquam ante in maximus.
+  <main class="">
+    <!-- ===== Hero Section Start ===== -->
+    <section id="home" class="ud-w-11/12 ud-mx-auto lg:ud-flex ud-flex-row-reverse ud-justify-between">
+      <div class="ud-w-1/2">
+        <img class="" src="images/Hero_img.png" alt="" srcset="" />
+      </div>
+      <div class="ud-w-1/2 ud-pt-16">
+        <p class="ud-text-dark ud-font-medium ud-text-lg">
+          🔥 Solid is one of the best option for you.
         </p>
-        <div class="ud-grid ud-grid-cols-3 ud-gap-5 ud-mt-[80px]">
-          <div class="ud-p-[50px] ud-shadow-lg">
-            <img src="images/saas-features/crafted-saas.png" alt="" srcset="" />
-            <h4 class="ud-text-[26px] ud-text-dark ud-mt-8 ud-mb-5">
-              Crafted for SaaS
-            </h4>
-            <p class="ud-text-text-color">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              convallis tortor.
-            </p>
-          </div>
-          <div class="ud-p-[50px] ud-shadow-xl">
-            <img src="images/saas-features/high-quality.png" alt="" srcset="" />
-            <h4 class="ud-text-[26px] ud-text-dark ud-mt-8 ud-mb-5">
-              High-quality Design
-            </h4>
-            <p class="ud-text-text-color">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              convallis tortor.
-            </p>
-          </div>
-          <div class="ud-p-[50px] ud-shadow-lg">
-            <img
-              src="images/saas-features/all-essential.png"
-              alt=""
-              srcset=""
-            />
-            <h4 class="ud-text-[26px] ud-text-dark ud-mt-8 ud-mb-5">
-              All Essential Sections
-            </h4>
-            <p class="ud-text-text-color">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              convallis tortor.
-            </p>
-          </div>
-          <div class="ud-p-[50px] ud-shadow-lg">
-            <img
-              src="images/saas-features/speed-optimized.png"
-              alt=""
-              srcset=""
-            />
-            <h4 class="ud-text-[26px] ud-text-dark ud-mt-8 ud-mb-5">
-              Speed Optimized
-            </h4>
-            <p class="ud-text-text-color">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              convallis tortor.
-            </p>
-          </div>
-          <div class="ud-p-[50px] ud-shadow-lg">
-            <img
-              src="images/saas-features/fully-customized.png"
-              alt=""
-              srcset=""
-            />
-            <h4 class="ud-text-[26px] ud-text-dark ud-mt-8 ud-mb-5">
-              Fully Customizable
-            </h4>
-            <p class="ud-text-text-color">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              convallis tortor.
-            </p>
-          </div>
-          <div class="ud-p-[50px] ud-shadow-lg">
-            <img
-              src="images/saas-features/reguler-updates.png"
-              alt=""
-              srcset=""
-            />
-            <h4 class="ud-text-[26px] ud-text-dark ud-mt-8 ud-mb-5">
-              Regular Updates
-            </h4>
-            <p class="ud-text-text-color">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              convallis tortor.
-            </p>
-          </div>
+        <h2 class="ud-my-3 ud-text-dark ud-font-bold ud-text-[44px] ud-leading-[50px]">
+          Complete Tailwind CSS Template for SaaS Website
+        </h2>
+        <p class="ud-text-text-color ud-text-base ud-pb-5">
+          Solid is a complete Tailwind CSS template crafted specially for
+          SaaS, Software Mobile App and Web App Sites.
+        </p>
+        <div class="ud-my-5">
+          <input type="email"
+            class="ud-w-[314px] ud-h-[46px] ud-rounded-[30px] ud-border ud-mr-5 ud-px-6 ud-text-xl ud-text-dark"
+            placeholder="Enter your email address" />
+          <button type="submit" class="btn-lg ud-bg-dark hover:ud-bg-opacity-90">
+            Get Started
+          </button>
         </div>
-      </section>
-      <!-- ===== Features section start ===== -->
+        <p class="ud-text-sm ud-text-dark">
+          Try for free no credit card required.
+        </p>
+      </div>
+    </section>
+    <!-- ===== Hero Section end ===== -->
 
-      <!-- ===== About screen 1 start ===== -->
-      <section class="ud-w-11/12 ud-mx-auto ud-flex ud-gap-10">
-        <div class="ud-w-1/2">
-          <img src="images/about-screen-1.png" alt="" srcset="" />
+    <!-- ===== Client brand logo start ===== -->
+    <section class="ud-bg-[#FBFBFB] ud-border ud-border-t">
+      <div class="ud-w-11/12 ud-mx-auto ud-flex ud-justify-around ud-py-[45px]">
+        <img src="images/brand-logo/logitech-2-1-1.png" alt="" srcset="" />
+        <img src="images/brand-logo/dropcam-1-1.png" alt="" srcset="" />
+        <img src="images/brand-logo/amd-logo-1.png" alt="" srcset="" />
+        <img src="images/brand-logo/nike-4.png" alt="" srcset="" />
+        <img src="images/brand-logo/Frame 4.png" alt="" srcset="" />
+        <img src="images/brand-logo/amazon-2.png" alt="" srcset="" />
+      </div>
+    </section>
+    <!-- ===== Client brand logo end ===== -->
+
+    <!-- ===== Features section start ===== -->
+    <section class="ud-py-[120px] ud-w-11/12 ud-mx-auto">
+      <h6 class="ud-text-center">
+        <span class="btn-feature ud-bg-[#EDF5FF] ud-border">SaaS Features</span>
+      </h6>
+      <h2 class="ud-text-center ud-my-3 ud-text-dark ud-font-bold ud-text-[44px] ud-leading-[50px]">
+        Our Software's Core Features
+      </h2>
+
+      <p class="ud-text-center ud-text-text-color">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
+        tortor eros.<br />
+        Donec vitae tortor lacus. Phasellus aliquam ante in maximus.
+      </p>
+      <div class="ud-grid ud-grid-cols-3 ud-gap-5 ud-mt-[80px]">
+        <div class="ud-p-[50px] ud-shadow-lg">
+          <img src="images/saas-features/crafted-saas.png" alt="" srcset="" />
+          <h4 class="ud-text-[26px] ud-text-dark ud-mt-8 ud-mb-5">
+            Crafted for SaaS
+          </h4>
+          <p class="ud-text-text-color">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+            convallis tortor.
+          </p>
         </div>
-        <div class="ud-w-1/2">
-          <p class="ud-text-dark ud-text-base ud-my-2">
-            <span
-              class="btn-feature ud-bg-[#20C5A8] ud-text-white ud-text-xs ud-mr-4"
-              >NEW</span
-            >
-            start tracking visitors
+        <div class="ud-p-[50px] ud-shadow-xl">
+          <img src="images/saas-features/high-quality.png" alt="" srcset="" />
+          <h4 class="ud-text-[26px] ud-text-dark ud-mt-8 ud-mb-5">
+            High-quality Design
+          </h4>
+          <p class="ud-text-text-color">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+            convallis tortor.
           </p>
-          <h2
-            class="ud-my-3 ud-text-dark ud-font-bold ud-text-[44px] ud-leading-[50px]"
-          >
-            Know More About Our Product.
-          </h2>
-          <p class="ud-text-text-color ud-text-base ud-pb-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-            ultricies lacus non fermentum ultrices. Fusce consectetur le.
+        </div>
+        <div class="ud-p-[50px] ud-shadow-lg">
+          <img src="images/saas-features/all-essential.png" alt="" srcset="" />
+          <h4 class="ud-text-[26px] ud-text-dark ud-mt-8 ud-mb-5">
+            All Essential Sections
+          </h4>
+          <p class="ud-text-text-color">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+            convallis tortor.
           </p>
-          <ul>
-            <li class="ud-flex">
-              <p
-                class="ud-w-[60px] ud-h-[60px] ud-flex ud-justify-center ud-items-center ud-border ud-rounded-full"
-              >
-                1
+        </div>
+        <div class="ud-p-[50px] ud-shadow-lg">
+          <img src="images/saas-features/speed-optimized.png" alt="" srcset="" />
+          <h4 class="ud-text-[26px] ud-text-dark ud-mt-8 ud-mb-5">
+            Speed Optimized
+          </h4>
+          <p class="ud-text-text-color">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+            convallis tortor.
+          </p>
+        </div>
+        <div class="ud-p-[50px] ud-shadow-lg">
+          <img src="images/saas-features/fully-customized.png" alt="" srcset="" />
+          <h4 class="ud-text-[26px] ud-text-dark ud-mt-8 ud-mb-5">
+            Fully Customizable
+          </h4>
+          <p class="ud-text-text-color">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+            convallis tortor.
+          </p>
+        </div>
+        <div class="ud-p-[50px] ud-shadow-lg">
+          <img src="images/saas-features/reguler-updates.png" alt="" srcset="" />
+          <h4 class="ud-text-[26px] ud-text-dark ud-mt-8 ud-mb-5">
+            Regular Updates
+          </h4>
+          <p class="ud-text-text-color">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+            convallis tortor.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ===== Features section start ===== -->
+
+    <!-- ===== About screen 1 start ===== -->
+    <section class="ud-w-11/12 ud-mx-auto ud-flex ud-gap-10">
+      <div class="ud-w-1/2">
+        <img src="images/about-screen-1.png" alt="" srcset="" />
+      </div>
+      <div class="ud-w-1/2">
+        <p class="ud-text-dark ud-text-base ud-my-2">
+          <span class="btn-feature ud-bg-[#20C5A8] ud-text-white ud-text-xs ud-mr-4">NEW</span>
+          start tracking visitors
+        </p>
+        <h2 class="ud-my-3 ud-text-dark ud-font-bold ud-text-[44px] ud-leading-[50px]">
+          Know More About Our Product.
+        </h2>
+        <p class="ud-text-text-color ud-text-base ud-pb-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+          ultricies lacus non fermentum ultrices. Fusce consectetur le.
+        </p>
+        <ul>
+          <li class="ud-flex">
+            <p class="ud-w-[60px] ud-h-[60px] ud-flex ud-justify-center ud-items-center ud-border ud-rounded-full">
+              1
+            </p>
+            <div class="ud-px-[22px]">
+              <h5 class="ud-text-[22px]">Lorem ipsum dolor.</h5>
+              <p class="ud-text-text-color">
+                Ut ultricies lacus non fermentum ultrices.
               </p>
-              <div class="ud-px-[22px]">
-                <h5 class="ud-text-[22px]">Lorem ipsum dolor.</h5>
-                <p class="ud-text-text-color">
-                  Ut ultricies lacus non fermentum ultrices.
-                </p>
-              </div>
-            </li>
+            </div>
+          </li>
 
-            <li class="ud-flex ud-my-[30px]">
-              <p
-                class="ud-w-[60px] ud-h-[60px] ud-flex ud-justify-center ud-items-center ud-border ud-rounded-full"
-              >
-                2
+          <li class="ud-flex ud-my-[30px]">
+            <p class="ud-w-[60px] ud-h-[60px] ud-flex ud-justify-center ud-items-center ud-border ud-rounded-full">
+              2
+            </p>
+            <div class="ud-px-[22px]">
+              <h5 class="ud-text-[22px]">Fusce consectetur le.</h5>
+              <p class="ud-text-text-color">
+                consectetur adipiscing elit fermentum ultricies.
               </p>
-              <div class="ud-px-[22px]">
-                <h5 class="ud-text-[22px]">Fusce consectetur le.</h5>
-                <p class="ud-text-text-color">
-                  consectetur adipiscing elit fermentum ultricies.
-                </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- ===== About screen 1 end ===== -->
+
+    <!-- ===== About screen 2 start ===== -->
+    <section id="" class="ud-w-11/12 ud-mx-auto lg:ud-flex ud-flex-row-reverse ud-justify-between">
+      <div class="ud-w-1/2">
+        <img class="" src="images/about-screen-2.png" alt="" srcset="" />
+      </div>
+      <div class="ud-w-1/2 ud-pt-16">
+        <p class="ud-text-dark ud-font-medium ud-text-lg">
+          GROW YOUR BUSSINESS FASTER
+        </p>
+        <h2 class="ud-my-3 ud-text-dark ud-font-bold ud-text-[44px] ud-leading-[50px]">
+          Track Your Audience Activities
+        </h2>
+        <p class="ud-text-text-color ud-text-base ud-pb-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+          ultricies lacus non fermentum ultrices. Fusce consectetur le.
+        </p>
+
+        <a class="ud-text-sm ud-text-dark hover:ud-text-primary" href="#">
+          Know More
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </section>
+    <!-- ===== About screen 2 end ===== -->
+
+    <!-- ===== Count Up start ===== -->
+
+    <section class="ud-relative ud-w-11/12 ud-mx-auto ud-h-96 ud-rounded">
+      <img class="ud-absolute ud-top-[-97px]" src="/src/images/count-up/Saly-32.png"  />
+      <div class="ud-w-full ud-h-[508px] ud-bg-gradient-to-b ud-from-[#DEE7FF] ud-to-[#F8F9FF] ud-rounded">
+        <div class="ud-h-[508px] ud-flex ud-justify-center ud-bg-dotted ud-relative">
+          <div class="ud-pt-[113px]">
+            <h1 class="ud-my-3 ud-text-dark ud-font-bold ud-text-[44px] ud-leading-[50px] ud-text-center">
+              Trusted by Global Companies.
+            </h1>
+            <p class="ud-text-center ud-text-text-color ud-mb-[70px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+              convallis tortor eros.<br />
+              Donec vitae tortor lacus. Phasellus aliquam ante in maximus.
+            </p>
+            <div class="ud-flex ud-justify-around ">
+              <div>
+                <h1 class="ud-my-3 ud-text-dark ud-font-bold ud-text-[44px] ud-leading-[50px] ud-text-center">500K</h2>
+                  <p class="ud-text-center ud-text-text-color ud-text-[22px]">World Wide Clients</p>
               </div>
-            </li>
-          </ul>
+              <div>
+                <h1 class="ud-my-3 ud-text-dark ud-font-bold ud-text-[44px] ud-leading-[50px] ud-text-center">1M+</h2>
+                  <p class="ud-text-center ud-text-text-color ud-text-[22px]">Downloads</p>
+              </div>
+              <div>
+                <h1 class="ud-my-3 ud-text-dark ud-font-bold ud-text-[44px] ud-leading-[50px] ud-text-center">865</h2>
+                  <p class="ud-text-center ud-text-text-color ud-text-[22px]" >Winning Award</p>
+              </div>
+              
+            </div>
+          </div>
+          <img class="ud-absolute ud-bottom-0 ud-right-0" src="/src/images/count-up/doodle-7 1.png" alt="" srcset="" />
         </div>
-      </section>
-      <!-- ===== About screen 1 end ===== -->
+      </div>
+    </section>
+    <!-- ===== Count Up end ===== -->
 
-      <!-- ===== About screen 2 start ===== -->
-      <section
-        id="home"
-        class="ud-w-11/12 ud-mx-auto lg:ud-flex ud-flex-row-reverse ud-justify-between"
-      >
-        <div class="ud-w-1/2">
-          <img class="" src="images/about-screen-2.png" alt="" srcset="" />
-        </div>
-        <div class="ud-w-1/2 ud-pt-16">
-          <p class="ud-text-dark ud-font-medium ud-text-lg">
-            GROW YOUR BUSSINESS FASTER
-          </p>
-          <h2
-            class="ud-my-3 ud-text-dark ud-font-bold ud-text-[44px] ud-leading-[50px]"
-          >
-            Track Your Audience Activities
-          </h2>
-          <p class="ud-text-text-color ud-text-base ud-pb-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-            ultricies lacus non fermentum ultrices. Fusce consectetur le.
-          </p>
+  </main>
+</body>
 
-          <a class="ud-text-sm ud-text-dark  hover:ud-text-primary" href="#">
-            Know More
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-          </a>
-        </div>
-      </section>
-      <!-- ===== About screen 2 end ===== -->
-
-    </main>
-  </body>
 </html>
