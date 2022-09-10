@@ -587,6 +587,10 @@ body {
   z-index: 50;
 }
 
+.ud-m-4 {
+  margin: 1rem;
+}
+
 .ud-mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -602,13 +606,32 @@ body {
   margin-bottom: 1.25rem;
 }
 
-.ud-my-\[80px\] {
-  margin-top: 80px;
-  margin-bottom: 80px;
+.ud-my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.ud-mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.ud-my-\[\] {
+  margin-top: ;
+  margin-bottom: ;
+}
+
+.ud-my-\[30px\] {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .ud-mr-5 {
   margin-right: 1.25rem;
+}
+
+.ud-mt-\[80px\] {
+  margin-top: 80px;
 }
 
 .ud-mt-8 {
@@ -619,8 +642,12 @@ body {
   margin-bottom: 1.25rem;
 }
 
-.ud-mt-\[80px\] {
-  margin-top: 80px;
+.ud-mb-\[30px\] {
+  margin-bottom: 30px;
+}
+
+.ud-mr-4 {
+  margin-right: 1rem;
 }
 
 .ud-inline-block {
@@ -647,6 +674,10 @@ body {
   height: 46px;
 }
 
+.ud-h-\[60px\] {
+  height: 60px;
+}
+
 .ud-w-full {
   width: 100%;
 }
@@ -661,6 +692,10 @@ body {
 
 .ud-w-\[314px\] {
   width: 314px;
+}
+
+.ud-w-\[60px\] {
+  width: 60px;
 }
 
 .ud-max-w-\[250px\] {
@@ -703,6 +738,10 @@ body {
   gap: 1.25rem;
 }
 
+.ud-gap-10 {
+  gap: 2.5rem;
+}
+
 .ud-space-y-5 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
@@ -725,6 +764,10 @@ body {
 
 .ud-rounded-\[30px\] {
   border-radius: 30px;
+}
+
+.ud-rounded-full {
+  border-radius: 9999px;
 }
 
 .ud-border {
@@ -760,12 +803,21 @@ body {
   background-color: rgb(237 245 255 / var(--tw-bg-opacity));
 }
 
+.ud-bg-\[\#20C5A8\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(32 197 168 / var(--tw-bg-opacity));
+}
+
 .ud-p-5 {
   padding: 1.25rem;
 }
 
 .ud-p-\[50px\] {
   padding: 50px;
+}
+
+.ud-p-\[30px\] {
+  padding: 30px;
 }
 
 .ud-px-5 {
@@ -786,6 +838,16 @@ body {
 .ud-py-\[120px\] {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.ud-px-\[22px\] {
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.ud-py-\[30px\] {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .ud-pt-16 {
@@ -828,6 +890,15 @@ body {
   font-size: 26px;
 }
 
+.ud-text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.ud-text-\[22px\] {
+  font-size: 22px;
+}
+
 .ud-font-medium {
   font-weight: 500;
 }
@@ -850,21 +921,14 @@ body {
   color: rgb(117 118 147 / var(--tw-text-opacity));
 }
 
+.ud-text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .ud-shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.ud-shadow-\[0_35px_60px_-15px_rgba\(0\,0\,0\,0\.3\)\] {
-  --tw-shadow: 0 35px 60px -15px rgba(0,0,0,0.3);
-  --tw-shadow-colored: 0 35px 60px -15px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.ud-shadow-md {
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -876,6 +940,8 @@ body {
 
 html {
   scroll-behavior: smooth;
+  --tw-text-opacity: 1;
+  color: rgb(24 28 49 / var(--tw-text-opacity));
 }
 
 .header {

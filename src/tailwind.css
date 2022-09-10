@@ -10,7 +10,7 @@
 @tailwind utilities;
 
 html {
-  @apply ud-scroll-smooth;
+  @apply ud-scroll-smooth ud-text-dark;
 }
 
 .header {
