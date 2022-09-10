@@ -587,10 +587,6 @@ body {
   z-index: 50;
 }
 
-.ud-m-4 {
-  margin: 1rem;
-}
-
 .ud-mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -609,16 +605,6 @@ body {
 .ud-my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-}
-
-.ud-mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.ud-my-\[\] {
-  margin-top: ;
-  margin-bottom: ;
 }
 
 .ud-my-\[30px\] {
@@ -640,10 +626,6 @@ body {
 
 .ud-mb-5 {
   margin-bottom: 1.25rem;
-}
-
-.ud-mb-\[30px\] {
-  margin-bottom: 30px;
 }
 
 .ud-mr-4 {
@@ -816,10 +798,6 @@ body {
   padding: 50px;
 }
 
-.ud-p-\[30px\] {
-  padding: 30px;
-}
-
 .ud-px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -843,11 +821,6 @@ body {
 .ud-px-\[22px\] {
   padding-left: 22px;
   padding-right: 22px;
-}
-
-.ud-py-\[30px\] {
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 .ud-pt-16 {
@@ -962,8 +935,6 @@ html {
   font-family: 'Lexend', sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
-  --tw-text-opacity: 1;
-  color: rgb(24 28 49 / var(--tw-text-opacity));
 }
 
 .nav-tab:hover {
@@ -1010,6 +981,11 @@ html {
 
 .hover\:ud-bg-opacity-90:hover {
   --tw-bg-opacity: 0.9;
+}
+
+.hover\:ud-text-primary:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 107 255 / var(--tw-text-opacity));
 }
 
 .ud-dark .dark\:ud-bg-dark {

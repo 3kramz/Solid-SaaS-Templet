@@ -22,7 +22,7 @@ html {
 }
 
 .nav-tab {
-  @apply ud-inline-flex ud-items-center ud-justify-center ud-text-center ud-font-heading ud-text-base ud-text-dark hover:ud-text-primary dark:hover:ud-text-white;
+  @apply ud-inline-flex ud-items-center ud-justify-center ud-text-center ud-font-heading ud-text-base hover:ud-text-primary dark:hover:ud-text-white;
 }
 
 .btn-lg {
