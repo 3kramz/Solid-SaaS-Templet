@@ -32,3 +32,9 @@ html {
 .btn-feature{
   @apply ud-rounded-[30px] ud-py-[5px] ud-px-[18px] ud-text-[14px];
 }
+
+
+.title{
+
+  @apply ud-my-3 ud-text-dark ud-font-bold ud-text-[44px] ud-leading-[50px];
+}
